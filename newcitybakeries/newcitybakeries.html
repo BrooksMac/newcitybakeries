@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New City Bakeries</title>
+    <link rel="stylesheet" type="text/css" href=newcitybakeries.css>
+</head>
+<body>
+
+<div class="everything">
+
+<div class="header">
+    <h1>New City Bakeries</h1>
+    <h5>
+        000 Somewhere Central <br>Someplace, Universe, 0X0 X0X<br>
+        000-000-000<br>
+        email@email.email
+    </h5>
+</div>
+
+<form id="form" onsubmit="contactinfo()">
+
+    <div>
+        <table>
+
+            <tr>
+            <td>Name</td>
+            <td><input type="text" maxlength="25" name="name" autofocus size="30" id="name"  pattern="^[A-Za-z -]+${25}" placeholder="Enter Name" required></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><input type="text" name="address" id="address" size="30" placeholder="$, street, city, state" required></td>
+        </tr>
+        <tr>
+            <td>Postal Code</td>
+            <td><input type="text" name="postalCode" id="postalCode" size="30" pattern="[A-Za-z][0-9][A-Za-z][-]?[ ]?[0-9][A-Za-z][0-9]" placeholder="X0X 0X0" required>  </td>
+        </tr>
+        <tr>
+            <td>Telephone Number</td>
+            <td><input type="tel" maxlength="30" size="30" name="number" id="phone" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="999-999-9999" required></td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td><input type="email" name="email" id="email" size="30" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" placeholder="email@email.com" required>  </td>
+        </tr>
+            <tr>
+                <td colspan="2"><button type="button" id="contactButton" class="contactButton" onclick="contactinfo()">Submit</button></td>
+            </tr>
+
+    </table>
+    </div>
+</form>
+
+    <div>
+        <table>
+            <tr>
+                <td>
+                    Rectangular or Round?
+                </td>
+                <td>
+                    <button id="rectangle" class="contactButton">rectangle</button>
+                </td>
+                <td>
+                    <button id="round"  class="contactButton">round</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div id="rectangleOptions" class="rectangle" style="display: none">
+        <h2>Sheet Cake</h2>
+
+        <table>
+            <tr >
+                <td>
+                    Width (cm):
+                </td>
+                <td>
+                    <input type="number" id="width" min="30" max="45" value="30">
+                </td>
+            </tr>
+            <tr >
+                <td>
+                    Length (cm):
+                </td>
+                <td>
+                    <input type="number" id="length" min="30" max="60" value="30">
+                </td>
+            </tr>
+            <tr >
+                <td>
+                    Layers:
+                </td>
+                <td>
+                    <input type="number" id="layersSheet" min="1" max="3" value="1">
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div id="roundOptions" class="round" style="display: none">
+        <h2>Round Cake</h2>
+        <table>
+            <tr >
+                <td>
+                    Radius (cm):
+                </td>
+                <td>
+                    <input type="number" id="radius" min="15" max="30" value="15">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Layers:
+                </td>
+                <td>
+                    <input type="number" id="layersRound" min="1" max="3" value="1">
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div id="extras" style="display: none">
+        <table>
+            <tr>
+                <td><label for="cream"> Cream Cheese icing</label></td>
+                <td><input type="checkbox" id="cream" name="cream" value=""></td>
+            </tr>
+            <tr>
+                <td><label for="almonds"> Fruit and Almonds</label></td>
+                <td><input type="checkbox" id="almonds" name="almonds" value=""></td>
+            </tr>
+            <tr>
+                <td><label for="fruit"> Fruit jam filling</label></td>
+                <td><input type="checkbox" id="fruit" name="fruit" value=""></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button id="submitSheet" class="sub" onclick="calculate()">Submit</button>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div class="result">
+        <p id="result" class="donkey"></p>
+        <p id="total"></p>
+    </div>
+</div>
+
+
+
+
+<script src="newcitybakeries.js"></script>
+</body>
+</html>

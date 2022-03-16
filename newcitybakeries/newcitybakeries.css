@@ -1,0 +1,72 @@
+.contactButton{
+    background-color: #2d3033;
+    color: white;
+}
+input:invalid {
+    border-color: #c50a1c;
+}
+input:valid{
+    border-color: #45ab11;
+}
+.header{
+    font-size: 200%;
+    text-align: center;
+    background-image: linear-gradient(140deg, #642da1, rgba(85, 193, 229, 0.69));
+    width: 100%;
+    border-radius: 100px;
+    box-shadow: 0px 5px black;
+}
+div{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    color: #e6e4e2;
+    font-weight: bold;
+    font-size: 120%;
+    background-image: linear-gradient(to bottom, #5333be, #1c2e45);
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 10px;
+    text-align: left;
+}
+.result{
+    text-align: left;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #402798, #3cc573);
+    border-radius: 100px;
+}
+h2{
+    text-align: center;
+}
+.rectangle{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.round{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.everything{
+    background-image: linear-gradient(to top, #16208c, #c53cbb);
+    border-radius: 100px;
+    box-shadow: -15px 10px rgba(5, 6, 14, 0.3);
+}
+
+p{
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.donkey{
+    text-align: left;
+    padding-left: 10%;
+}
